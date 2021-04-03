@@ -62,6 +62,9 @@ descriptions:
     
   - cat: forme
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+    
+  - cat: test
+    desc: "Just some placeholder posts, lorem ipsum and the rest."
 # Social icons and sharing options
 #
 # Social settings are used in two places:
