@@ -5,8 +5,9 @@ permalink: /about/
 main_nav: true
 ---
 
-interested in <br/>
+Data scientist (2021~)  <br/>
 
+interested in
 - data analyisis
 - data engineering
 - machine learning
