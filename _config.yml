@@ -14,7 +14,7 @@ subtitle: "Where the wind blows, Where the heart is headed."
 email: wlghd10@gmail.com
 name: Jihong Kim
 description: >
-  Where the wind blows, Where the heart is headed.
+  Where the wind blows, <br/>Where the heart is headed.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
