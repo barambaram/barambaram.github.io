@@ -49,6 +49,14 @@ jekyll-archives:
 # Disqus comments
 # disqus_shortname: bencentra
 
+descriptions:
+  - cat: For-you
+    desc: "Posts for our intellectual growth"
+
+  - cat: For-me
+    desc: "Posts for my 256 Mb memory"
+    
+    
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
 
