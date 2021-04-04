@@ -6,7 +6,7 @@ tags: Max-pooling Mean-pooling Min-pooling CNN Deeplearning
 categories: For-You
 ---
 
-## Image data의 pooling layer 
+### Image data의 pooling layer 
 CNN 모델을 구성할 때 pooling layer는 핵심적인 역할을 한다. 
 먼저, convolution 연산을 통해 추출된 원본 이미지의 feature map 크기를 줄임으로서 이후 convolution 연산의 복잡성을 낮출 수 있다. 
 그리고 feature map의 불필요한 feature를 제거함으로서 예측/분류 정확도를 개선한다. 이러한 역할을 하는 pooling layer를 동작에 따라 3가지로 세분화할 수 있다.
