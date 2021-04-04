@@ -18,6 +18,8 @@ CNN 모델을 구성할 때 pooling layer는 핵심적인 역할을 한다.
 아래의 그림은 convolution layer를 통과한 후의 16 X 16 feature map에 2 X 2 pooling layer를 적용한 예시이다. 
 Grey color 농도에 따라 1부터 5까지의 숫자를 지정하였다. (RGB 값이 흰색 >> 검은색임을 고려한 것이다.)
 
+![alt text]({{ site.baseurl }}/assets/pooling.png "Profile Picture"){:.profile}
+
 그림으로 이해되듯이 min pooling은 어두운 색상을 더 강조하고, max pooling은 밝은 색상을 더 강조한다. 
-Yolo와 같이 CNN 기반의 유명 논문에서는 mean pooling이 대중적으로 사용되는 것으로 확인된다. 
-그렇다고 mean pooling이 지배적으로 좋은 선택임을 이야기하는 것은 아니고, 위의 그림에서 보다시피 어떤 pooling을 적용하느냐에 따라 결과가 확연히 다르기 때문에 신중한 선택이 필요하다.
+Yolo와 같이 CNN 기반의 유명 논문에서는 mean pooling이 사용되고, 일반적으로도 mean pooling이 통용된다. 이는 평균치로 잡으면 중간은 간다라는 국제적으로 통하는 인식 때문이 아닐까?
+그렇다고 mean pooling이 지배적으로 좋은 선택임을 이야기하는 것은 아니고, 위의 그림에서 보다시피 어떤 pooling을 적용하느냐에 따라 결과가 확연히 다르기 때문에 case-by-case 선택이 필요하다.
