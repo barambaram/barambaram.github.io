@@ -16,8 +16,9 @@ categories: For-You
 위 두 시계열 데이터 (벡터)를 보자. 데이터 A는 데이터 B 보다 길이가 길다. 이 처럼 길이가 다른 두 시계열 데이터의 유사성 (distance, similarity)을 어떻게 계산할까?
 
 ![alt text]({{ site.baseurl }}/assets/dtw-origin2.png "Profile Picture"){:.profile}
-가장 간단하게는 위와 같이 데이터 A 전체를 데이터 B와 비교하는 것이 아니라 B의 길이 만큼만 비교하는 간단한 방법이 있다.   
-하지만, 이는 데이터 A 일부를 무시하므로 부적절한 방법이라 할 수 있다. (distance: 2.645751).
+
+
+가장 간단하게는 위와 같이 데이터 A 전체를 데이터 B와 비교하는 것이 아니라 B의 길이 만큼만 비교하는 간단한 방법이 있다. 하지만, 이는 데이터 A 일부를 무시하므로 부적절한 방법이라 할 수 있다. (distance: 2.645751).
 
 ```python
 from scipy.spatial.distance import euclidean
@@ -28,9 +29,8 @@ print("distance: ", euclidean(A[:len(B)], B))
 
 <h3> Dynamic time warping이란? </h3>
 
-DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정하는 알고리즘이다. 알고리즘 이름의 warping (휘다; 휘게 만들다)은 길이가 짧은 데이터를 휘게 하는 것이라 이해하면 더 쉽다. 아래의 알고리즘과 제일 하단의 그림으로 쉽게 이해할 수 있다.
-알고리즘은 간단하다.
-
+DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정하는 알고리즘이다. 알고리즘 이름의 warping (휘다; 휘게 만들다)은 길이가 짧은 데이터를 휘게 하는 것이라 이해하면 더 쉽다.    
+아래의 알고리즘과 제일 하단의 그림으로 쉽게 이해할 수 있다. 알고리즘은 간단하다.
 
 Step 1. Distance matrix를 구성하여 각 index의 값 간의 유사도 (distance)를 계산한다.
 
