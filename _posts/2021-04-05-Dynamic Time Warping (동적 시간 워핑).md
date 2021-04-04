@@ -2,7 +2,7 @@
 layout: post
 title:  "Dynamic Time Warping (동적 시간 워핑)"
 date:   2021-04-05T14:25:52-05:00
-tags: dynamic time warping, dtw, 동적시간워핑
+tags: dynamictimewarping dtw 동적시간워핑
 categories: For-You
 ---
 
@@ -33,15 +33,15 @@ print("distance: ", euclidean(A[:len(B)], B))
 DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정하는 알고리즘이다. 알고리즘 이름의 warping (휘다; 휘게 만들다)은 길이가 짧은 데이터를 휘게 하는 것이라 이해하면 더 쉽다.    
 아래의 알고리즘과 제일 하단의 그림으로 쉽게 이해할 수 있다. 알고리즘은 간단하다.
 
-Step 1. Distance matrix를 구성하여 각 index의 값 간의 유사도 (distance)를 계산한다.
+**Step 1.** Distance matrix를 구성하여 각 index의 값 간의 유사도 (distance)를 계산한다.
 
 ![alt text]({{ site.baseurl }}/assets/dtw-similarity.png "Profile Picture"){:.profile}
 
-Step 2. 좌 상단 (첫 index)부터 우 하단 (마지막 index)까지 최소 cost (distance)로 이동할 수 있는 최단 경로를 찾는다.
+**Step 2.** 좌 상단 (첫 index)부터 우 하단 (마지막 index)까지 최소 cost (distance)로 이동할 수 있는 최단 경로를 찾는다.
 
 ![alt text]({{ site.baseurl }}/assets/dtw-similarity2.png "Profile Picture"){:.profile}
 
-Step 3. 경로에 포함된 노란색 셀이 최적의 index 매칭 및 유사도 (distance)이다.
+**Step 3.** 경로에 포함된 노란색 셀이 최적의 index 매칭 및 유사도 (distance)이다.
 DTW 알고리즘을 실제로 구현을 한다면 Dynamic programming으로 쉽게 가능하다. 가장 중요한 제약 조건은 음의 방향으로는 이동하지 못한다는 것이다.
 
 
