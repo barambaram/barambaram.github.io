@@ -11,6 +11,8 @@ categories: For-You
 
 - A = [1, 3, 5, 7, 6, 8, 9, 10, 8, 7] <br/>
 - B = [1, 2, 6, 5, 7, 8] <br/>
+
+
 위 두 시계열 데이터 (벡터)를 보자. 데이터 A는 데이터 B 보다 길이가 길다. 이 처럼 길이가 다른 두 시계열 데이터의 유사성 (distance, similarity)을 어떻게 계산할까?
 
 ![alt text]({{ site.baseurl }}/assets/dtw-origin2.png "Profile Picture"){:.profile}
