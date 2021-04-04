@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dynamic Time Warping (동적 시간 워핑)"
-date:   2015-04-18T14:25:52-05:00
+date:   2021-04-05T14:25:52-05:00
 categories: For-You
 ---
 
