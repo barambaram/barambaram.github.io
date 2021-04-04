@@ -28,6 +28,8 @@ print("distance: ", euclidean(A[:len(B)], B))
 
 DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정하는 알고리즘이다. 알고리즘 이름의 warping (휘다; 휘게 만들다)은 길이가 짧은 데이터를 휘게 하는 것이라 이해하면 더 쉽다. 아래의 알고리즘과 제일 하단의 그림으로 쉽게 이해할 수 있다.
 알고리즘은 간단하다.
+
+
 1. Distance matrix를 구성하여 각 index의 값 간의 유사도 (distance)를 계산한다.
 
 ![alt text]({{ site.baseurl }}/assets/dtw-similarity.png "Profile Picture"){:.profile}
