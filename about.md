@@ -13,3 +13,4 @@ interested in
 - machine learning
 - deeplearning
 - algorithm
+- boxing
