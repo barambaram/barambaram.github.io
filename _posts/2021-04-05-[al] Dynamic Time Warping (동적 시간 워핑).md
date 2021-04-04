@@ -2,7 +2,7 @@
 layout: post
 title:  "[al] Dynamic Time Warping (동적 시간 워핑)"
 date:   2021-04-05T14:25:52-05:00
-tags: dynamictimewarping dtw 동적시간워핑
+tags: dynamic-time-warping dtw 동적시간워핑
 categories: For-You
 ---
 
