@@ -44,9 +44,9 @@ DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정
 ![alt text]({{ site.baseurl }}/assets/dtw-similarity2.png "Profile Picture"){:.profile}
 
 **Step 3.** 경로에 포함된 노란색 셀이 최적의 index 매칭 및 유사도 (distance)이다.
-DTW 알고리즘을 실제로 구현을 한다면 Dynamic programming으로 쉽게 가능하다. 가장 중요한 제약 조건은 음의 방향으로는 이동하지 못한다는 것이다.
 
 
+DTW 알고리즘을 실제로 구현을 한다면 Dynamic programming으로 쉽게 가능하다. 가장 중요한 제약 조건은 음의 방향으로는 이동하지 못한다는 것이다.   
 python에 fastdtw라는 library가 있어 간단하게 실험을 수행하고 결과값을 볼 수 있다. 
 fastdtw 함수의 출력 값은 두 데이터의 Manhattan distance ([0])와 최적의 path이다 ([1]).
 
