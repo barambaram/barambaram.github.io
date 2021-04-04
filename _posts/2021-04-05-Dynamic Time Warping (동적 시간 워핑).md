@@ -30,16 +30,15 @@ DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정
 알고리즘은 간단하다.
 
 
-1. Distance matrix를 구성하여 각 index의 값 간의 유사도 (distance)를 계산한다.
+Step 1. Distance matrix를 구성하여 각 index의 값 간의 유사도 (distance)를 계산한다.
 
 ![alt text]({{ site.baseurl }}/assets/dtw-similarity.png "Profile Picture"){:.profile}
 
-2. 좌 상단 (첫 index)부터 우 하단 (마지막 index)까지 최소 cost (distance)로 이동할 수 있는 최단 경로를 찾는다.
-
+Step 2. 좌 상단 (첫 index)부터 우 하단 (마지막 index)까지 최소 cost (distance)로 이동할 수 있는 최단 경로를 찾는다.
 
 ![alt text]({{ site.baseurl }}/assets/dtw-similarity2.png "Profile Picture"){:.profile}
 
-3. 경로에 포함된 노란색 셀이 최적의 index 매칭 및 유사도 (distance)이다.
+Step 3. 경로에 포함된 노란색 셀이 최적의 index 매칭 및 유사도 (distance)이다.
 DTW 알고리즘을 실제로 구현을 한다면 Dynamic programming으로 쉽게 가능하다. 가장 중요한 제약 조건은 음의 방향으로는 이동하지 못한다는 것이다.
 
 
