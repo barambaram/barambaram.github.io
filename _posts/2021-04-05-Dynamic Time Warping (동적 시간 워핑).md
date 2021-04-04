@@ -47,3 +47,14 @@ path: [(0, 0), (1, 1), (2, 2), (2, 3), (3, 4), (4, 4), (5, 5), (6, 5), (7, 5), (
 최적의 path를 통해 길이가 짧은 데이터 B를 warping한 데이터 그래프는 아래와 같다.
 
 ![alt text]({{ site.baseurl }}/assets/dtw-result.png "Profile Picture"){:.profile}
+
+실제로 길이가 짧았던 데이터 B는 warping 되었고, 두 데이터 간의 distance는 3.32로써 기존의 방법의 결과 값인 2.64와는 차이를 보이는 것을 확인했다.
+
+```python
+from fastdtw import fastdtw
+path = fastdtw(A, B)[1]
+B_ = []
+for i in range(len(A)):
+    B_.append(A[path[i][1]])
+print("distance: ", euclidean(A, B_))
+```
