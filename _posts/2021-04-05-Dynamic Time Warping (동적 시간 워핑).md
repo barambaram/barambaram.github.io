@@ -21,12 +21,12 @@ categories: For-You
 
 가장 간단하게는 위와 같이 데이터 A 전체를 데이터 B와 비교하는 것이 아니라 B의 길이 만큼만 비교하는 간단한 방법이 있다. 하지만, 이는 데이터 A 일부를 무시하므로 부적절한 방법이라 할 수 있다. (distance: 2.645751).
 
-{% highlight html %} {% raw %}{% highlight python %}
+```python
 from scipy.spatial.distance import euclidean
 A = [1, 3, 5, 7, 6, 8, 9, 10, 8, 7]
 B = [1, 2, 6, 5, 7, 8]
 print("distance: ", euclidean(A[:len(B)], B))
-{% endhighlight %}{% endraw %} {% endhighlight %}
+```
 
 <h3> Dynamic time warping이란? </h3>
 
