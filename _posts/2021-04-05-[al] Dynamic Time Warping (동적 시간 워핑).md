@@ -32,8 +32,7 @@ print("distance: ", euclidean(A[:len(B)], B))
 
 <h3> Dynamic time warping이란? </h3>
 
-DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정하는 알고리즘이다. 알고리즘 이름의 warping (휘다; 휘게 만들다)은 길이가 짧은 데이터를 휘게 하는 것이라 이해하면 더 쉽다.    
-아래의 알고리즘과 제일 하단의 그림으로 쉽게 이해할 수 있다. 알고리즘은 간단하다.
+DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정하는 알고리즘이다. 알고리즘 이름의 warping (휘다; 휘게 만들다)은 길이가 짧은 데이터를 휘게 하는 것이라 이해하면 더 쉽다. 아래의 알고리즘과 제일 하단의 그림으로 쉽게 이해할 수 있다. 알고리즘은 간단하다.
 
 **Step 1.** Distance matrix를 구성하여 각 index의 값 간의 유사도 (distance)를 계산한다.
 
@@ -46,9 +45,7 @@ DTW란 시계열 데이터 간 비교를 위한 최적의 index 매칭을 추정
 **Step 3.** 경로에 포함된 노란색 셀이 최적의 index 매칭 및 유사도 (distance)이다.
 
 
-DTW 알고리즘을 실제로 구현을 한다면 Dynamic programming으로 쉽게 가능하다. 가장 중요한 제약 조건은 음의 방향으로는 이동하지 못한다는 것이다.   
-python에 fastdtw라는 library가 있어 간단하게 실험을 수행하고 결과값을 볼 수 있다. 
-fastdtw 함수의 출력 값은 두 데이터의 Manhattan distance ([0])와 최적의 path이다 ([1]).
+DTW 알고리즘을 실제로 구현을 한다면 Dynamic programming으로 쉽게 가능하다. 가장 중요한 제약 조건은 음의 방향으로는 이동하지 못한다는 것이다. python에 fastdtw라는 library가 있어 간단하게 실험을 수행하고 결과값을 볼 수 있다. fastdtw 함수의 출력 값은 두 데이터의 Manhattan distance ([0])와 최적의 path이다 ([1]).
 
 
 - path: [(0, 0), (1, 1), (2, 2), (2, 3), (3, 4), (4, 4), (5, 5), (6, 5), (7, 5), (8, 5), (9, 5)].
