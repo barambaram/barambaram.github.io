@@ -7,7 +7,7 @@ categories: For-You
 ---
 DID를 설명하기에 앞서 DID가 활용되는 A/B 테스트에 대해 간단히 알아보자. 
 
-### A/B테스트
+### A/B 테스트
  
 A/B 테스트란 모집단을 실험군 (treat)과 대조군 (control)로 나눈 후 특정 정책을 실험군에게만 적용하여 그 정책의 유효성 (효과)을 추정하는 것이다. 즉, 정책의 효과 추정이 A/B 테스트의 목적이다.
 실제 비스니스 서비스에서 A/B 테스트를 시행할 때 어려운 점은 크게 두가지로 꼽힌다. 
@@ -23,3 +23,6 @@ A/B 테스트란 모집단을 실험군 (treat)과 대조군 (control)로 나눈
 ### Difference In Difference, DID, 이중차분법
 
 DID란 A/B 테스트 방법 중 하나로, 이름이 거창하지만 우리가 알게 모르게 일상 생활에서도 적용하고 있는 효과 추정 방법이다.
+아래 그림 (출처: 위키피디아)으로 설명을 해보자. `time 1`은 정책 적용 전, `time 2`는 정책 적용 후를 의미한다. $$time_{1}$$
+
+![alt text]({{ site.baseurl }}/assets/did.png "Profile Picture"){:.profile}
