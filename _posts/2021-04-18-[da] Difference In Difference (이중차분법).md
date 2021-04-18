@@ -23,6 +23,9 @@ A/B 테스트란 모집단을 실험군 (treat)과 대조군 (control)로 나눈
 ### Difference In Difference, DID, 이중차분법
 
 DID란 A/B 테스트 방법 중 하나로, 이름이 거창하지만 우리가 알게 모르게 일상 생활에서도 적용하고 있는 효과 추정 방법이다.
-아래 그림 (출처: 위키피디아)으로 설명을 해보자. `time_1`은 정책 적용 전, `time_2`는 정책 적용 후를 의미한다.
+아래 그림 (출처: 위키피디아)으로 설명을 해보자. `Time_1`은 정책 적용 전, `Time_2`는 정책 적용 후를 의미한다.
+궁극적으로는 `P_2 - Q`가 정책의 효과이고 이를 계산하는 것은 `(P_2 - P_1) - (S_2 - S_1)`이다.
+
+
 
 ![alt text]({{ site.baseurl }}/assets/did.png "Profile Picture"){:.profile}
